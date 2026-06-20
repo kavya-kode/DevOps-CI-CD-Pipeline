@@ -1,0 +1,12 @@
+DevOps-CI-CD-Pipeline
+│
+├── application_source
+│   ├── app.py
+│   └── requirements.txt
+│
+├── screenshots
+│
+├── .github
+│   └── workflows
+│
+└── README.md

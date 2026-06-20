@@ -4,15 +4,13 @@ on:
   push:
     branches:
       - main
-      - development
+      - feature-test
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Code
         uses: actions/checkout@v4
 
@@ -25,6 +23,12 @@ jobs:
         run: |
           pip install -r application_source/requirements.txt
 
-      - name: Run Application
+      - name: Build Verification
         run: |
           python application_source/app.py
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: application-files
+          path: application_source/

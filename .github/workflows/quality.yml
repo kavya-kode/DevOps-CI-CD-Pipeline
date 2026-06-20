@@ -1,0 +1,28 @@
+name: Code Quality Checks
+
+on:
+  push:
+    branches:
+      - main
+      - feature-test
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Linting Tool
+        run: |
+          pip install flake8
+
+      - name: Run Linting
+        run: |
+          flake8 application_source --max-line-length=120

@@ -1,4 +1,4 @@
-name: Pull Request Check
+name: Automated Testing
 
 on:
   pull_request:
@@ -6,25 +6,21 @@ on:
       - main
 
 jobs:
-
   verify:
-
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
 
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install Dependencies
         run: |
-          pip install -r application_source/requirements.txt
+          pip install pytest
 
-      - name: Verify Code
+      - name: Run Unit Tests
         run: |
-          python application_source/app.py
+          cd application_source
+          python -m pytest -v

@@ -1,0 +1,51 @@
+Repository Setup
+mkdir DevOps-CI-CD-Pipeline
+cd DevOps-CI-CD-Pipeline
+
+git init
+git branch -M main
+
+git add .
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/kavya-kode/DevOps-CI-CD-Pipeline.git
+git push -u origin main
+Branch Configuration
+git checkout -b feature-test
+git push origin feature-test
+Build Workflow
+git add .
+git commit -m "Added build workflow"
+git push origin feature-test
+Testing Workflow
+pip install pytest
+
+python -m pytest -v
+
+git add .
+git commit -m "Added automated testing workflow"
+git push origin feature-test
+Code Quality Checks
+pip install flake8
+
+flake8 application_source --max-line-length=120
+
+git add .
+git commit -m "Added code quality checks"
+git push origin feature-test
+Deployment Simulation
+git add .
+git commit -m "Added deployment simulation workflow"
+git push origin feature-test
+Workflow Monitoring
+git status
+git log --oneline
+Final Submission
+git add .
+git commit -m "Final CI/CD pipeline submission"
+git push origin feature-test
+Pull Request Workflow
+git checkout feature-test
+git push origin feature-test
+
+Feature branch was used for development and testing before integration into the main branch.

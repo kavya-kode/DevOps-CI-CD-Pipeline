@@ -130,5 +130,117 @@ Application files were packaged and uploaded as workflow artifacts.
 
 The workflow verified successful execution by running the application and validating the output.
 
+\## Workflow Monitoring
+
+
+
+\### Pipeline Execution History
+
+GitHub Actions maintained a complete execution history of all workflow runs.
+
+
+
+\### Success Rate
+
+Most workflow runs completed successfully. Failed runs were analyzed and corrected.
+
+
+
+\### Failed Runs
+
+Failed runs were used to identify issues in testing and code quality checks.
+
+
+
+\### Build Duration
+
+Workflow execution times were monitored to evaluate pipeline performance.
+
+
+
+\### Logs and Debugging
+
+Detailed logs provided troubleshooting information for build, test, quality, and deployment stages.
+
+\### Deployment Logs Analysis
+
+
+
+Deployment logs were reviewed after workflow execution.
+
+
+
+Observations:
+
+\- Deployment stage executed successfully.
+
+\- Environment variables were loaded correctly.
+
+\- Deployment verification completed without errors.
+
+\- Workflow logs confirmed successful deployment simulation.
+
+
+
+The logs provided visibility into the deployment process and helped verify pipeline reliability.
+
+\### Success Rate
+
+
+
+Total Workflow Runs: 12
+
+Successful Runs: 10
+
+Failed Runs: 2
+
+
+
+Success Rate = 83.3%
+
+\## Workflow Monitoring
+
+
+
+\### Pipeline Execution History
+
+
+
+GitHub Actions maintained a complete history of all workflow executions, including build, testing, quality checks, and deployment workflows.
+
+
+
+\### Success Rate
+
+
+
+Workflow execution results were monitored to calculate the overall success rate of the CI/CD pipeline.
+
+
+
+\### Failed Runs
+
+
+
+Failed workflow runs were analyzed to identify issues such as linting errors and test failures.
+
+
+
+\### Build Duration
+
+
+
+Execution times for workflows were reviewed to monitor pipeline performance and efficiency.
+
+
+
+\### Logs and Debugging Information
+
+
+
+Detailed workflow logs were examined to troubleshoot errors, validate successful executions, and verify deployment activities.
+
+
+
 
 

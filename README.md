@@ -1,72 +1,35 @@
-\# DevOps CI/CD Pipeline
+# DevOps CI/CD Pipeline
 
-
-
-\## Project Overview
-
-
+## Project Overview
 
 This project demonstrates a CI/CD pipeline implementation using GitHub Actions.
 
-
-
-\## Repository Structure
-
-
+## Repository Structure
 
 DevOps-CI-CD-Pipeline/
 
-
-
-├── application\_source/
-
-
+├── application_source/
 
 │ ├── app.py
 
-
-
 │ └── requirements.txt
-
-
 
 ├── screenshots/
 
-
-
 ├── .github/workflows/
-
-
 
 └── README.md
 
+## Technologies Used
 
+* Git
+* GitHub
+* GitHub Actions
+* Python
 
-\## Technologies Used
+## Objectives
 
-
-
-\* Git
-
-\* GitHub
-
-\* GitHub Actions
-
-\* Python
-
-
-
-\## Objectives
-
-
-
-\* Continuous Integration
-
-\* Automated Testing
-
-\* Build Automation
-
-\* Deployment Simulation
-
-
-
+* Continuous Integration
+* Automated Testing
+* Build Automation
+* Deployment Simulation
